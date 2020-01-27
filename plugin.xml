@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-idfa"
       version="1.1.0">
 
-    <name>cordova-plugin-idfa</name>
+    <name>Idfa</name>
     <description>Cordova plugin to get Advertising ID (IDFA or AAID)</description>
     <license>MIT</license>
     <keywords>cordova</keywords>
@@ -11,7 +13,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <issue>https://github.com/chemerisuk/cordova-plugin-idfa/issues</issue>
 
     <js-module src="www/Idfa.js" name="Idfa">
-        <merges target="cordova.plugins.idfa" />
+        <merges target="window.Idfa" />
     </js-module>
 
     <engines>
