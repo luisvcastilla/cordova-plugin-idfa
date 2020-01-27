@@ -46,12 +46,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
 
-        <dependency id="cordova-support-android-plugin" version="~1.0.0"/>
-
         <framework src="com.google.android.gms:play-services-ads-identifier:$PLAY_SERVICES_VERSION" />
 
-        <source-file src="src/android/IdfaPlugin.java"
-            target-dir="src/by/chemerisuk/cordova/advertising/" />
+        <source-file src="src/android/IdfaPlugin.java" target-dir="src/by/chemerisuk/cordova/advertising" />
     </platform>
 
 </plugin>
