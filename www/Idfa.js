@@ -1,10 +1,10 @@
 var exec = require("cordova/exec");
-var PLUGIN_NAME = "Idfa";
+var Idfa = {};
 
-module.exports = {
-    getInfo: function() {
-        return new Promise(function(resolve, reject) {
-            exec(resolve, reject, PLUGIN_NAME, "getInfo", []);
-        });
-    }
-};
+Idfa.getInfo = function() {
+    return new Promise(function(resolve, reject) {
+        cordova.exec(resolve, reject, 'Idfa', 'getInfo', []);
+    });
+} 
+
+module.exports = Idfa;
